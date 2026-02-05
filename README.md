@@ -1,20 +1,20 @@
-# nvim editor on Alpine
+# nvim editor on Debian
 
-Sets up `uv`, `ruff`linter/formatter and `ty` type checker.
+Sets up `zig` with `zls` language server and `nvim` on Debian.
 
 
 ## Build
 ```
-docker build . -t <YOUR_IMAGE_TAG: eg siuyin/edt:latest>
+docker build . -t <YOUR_IMAGE_TAG: eg siuyin/ziged:latest>
 ```
 
 ## Run
 ```
-docker run --name edt -it -v ${HOME}:/h <YOUR_IMAGE_TAG>
+docker run --name ziged -it -v ${HOME}:/h <YOUR_IMAGE_TAG>
 ```
 
 ## Cleanup
 ```
-docker rm edt
+docker rm ziged
 doker rmi <YOUR_IMAGE_TAG>
 ```
