@@ -1,0 +1,1 @@
+export PATH="/usr/local/nvim/bin:/usr/local/zig:$PATH"
